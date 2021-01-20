@@ -156,7 +156,7 @@ def predict():
                     resp = [int(v) for v in model.predict(pred_data)]
                     pred_data['country'] = ['country' for i in range(len(pred_data))]
                     pred_data['population'] = resp
-                    st.dataframe(pred_data)
+                    st.table(pred_data)
             else:
                 st.error('Select a country!')
                     
