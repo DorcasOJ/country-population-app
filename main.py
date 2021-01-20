@@ -7,7 +7,7 @@ from sklearn.ensemble import GradientBoostingRegression, RandomForestRegression
 import plotly.graph_objs as go
 
 
-data = pd.read_csv('countries.csv')
+data = pd.read_csv('.data/countries.csv')
 data['figure'] = ['{:,}'.format(v) for v in data.population]
 countries = list(data.country.unique())
 thresholds  = [max(data['population']), 200000000, 100000000, 10000000, 1000000, 100000, min(data['population']) ]
