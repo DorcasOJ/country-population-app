@@ -28,7 +28,7 @@ def main():
 def home():
     st.header('Countries population')
     st.markdown('> Graph a country\'s population between 1952 to 2007')
-    
+    st.write('Make a Chart!')
     country_name = st.selectbox('Country name', ['None Selected'] +list(data.country.unique()))
     if country_name != 'None Selected':
         df_bar = data[data.country == country_name]
@@ -140,7 +140,7 @@ def predict():
                 pred_data = pd.DataFrame([year], columns =['year'])
                 model = joblib.load('country_model/' + country + '.pkl')
                 resp = int(model.predict(pred_data))
-                st.write('Population of {} in year {} is {:,}'.format(country, year, str(resp)))
+                st.write('Population of {} in year {} is {:,}'.format(country, year, resp))
         else:
             st.error('Select a country!')
                 
