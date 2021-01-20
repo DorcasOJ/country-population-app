@@ -140,7 +140,7 @@ def predict():
                 pred_data = pd.DataFrame([year], columns =['year'])
                 model = joblib.load('country_model/' + country + '.pkl')
                 resp = int(model.predict(pred_data))
-                st.write('Population of {} in year {} is {:,}'.format(country, year, resp))
+                st.write('Population of {} in year {} is {:,}'.format(country, year, str(resp)))
                 
     st.markdown('---')
     if st.checkbox('Generate past and future population figures with model'):
