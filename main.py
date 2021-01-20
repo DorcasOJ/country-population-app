@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import altair as alt
 import joblib
-from sklearn.ensemble import GradientBoostingRegression, RandomForestRegression
+from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
 import plotly.graph_objs as go
 
 
