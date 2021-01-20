@@ -1,6 +1,0 @@
-streamlit
-pandas==1.1.4
-plotly==4.13.0
-altair==4.1.0
-scikit-learn
-joblib
