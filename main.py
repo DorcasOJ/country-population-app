@@ -141,6 +141,8 @@ def predict():
                 model = joblib.load('country_model/' + country + '.pkl')
                 resp = int(model.predict(pred_data))
                 st.write('Population of {} in year {} is {:,}'.format(country, year, str(resp)))
+        else:
+            st.error('Select a country!')
                 
     st.markdown('---')
     if st.checkbox('Generate past and future population figures with model'):
