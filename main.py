@@ -135,7 +135,7 @@ def predict():
     year = st.selectbox('Predict for year', year_list)
     
     if st.button('Predict population'):
-        if country != 'None Selected':
+        if country != 'None selected':
             if country and year:
                 pred_data = pd.DataFrame([year], columns =['year'])
                 model = joblib.load('country_model/' + country + '.pkl')
