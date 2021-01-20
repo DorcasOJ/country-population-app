@@ -155,8 +155,6 @@ def predict():
                     pred_data['country'] = ['country' for i in range(len(pred_data))]
                     pred_data['population'] = resp
                     st.dataframe(pred_data)
-                    if st.button('Download data as csv file'):
-                        pred_data.to_csv('generated_data.csv', index = False)
             else:
                 st.error('Select a country!')
                     
