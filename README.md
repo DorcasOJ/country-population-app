@@ -1,7 +1,8 @@
 # Country_population_app
 
 A web app that graphs, maps and predict countries population. <br/>
-[Link](http://country-population.herokuapp.com/) to application <br/>
+
+# [View app here](http://country-population.herokuapp.com/)
 
 
 # Screenshots
